@@ -1,0 +1,12 @@
+{
+  "name": "yw-sync-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "语文幼小衔接 · 跨设备同步后端 (Node + SQLite，同时托管前端与 API)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
