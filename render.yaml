@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: yw-sync
+    runtime: node
+    nodeVersion: "22"
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    healthCheckPath: "/api/ping"
+    envVars:
+      - key: DB_PATH
+        value: /data/yw.db
+      - key: SYNC_KEY
+        sync: false
